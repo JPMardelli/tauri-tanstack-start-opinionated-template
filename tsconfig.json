@@ -1,0 +1,37 @@
+{
+  "include": ["src-ts/**/*.ts", "src-ts/**/*.tsx"],
+  "compilerOptions": {
+    /* Type Checking */
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+
+    /* Modules */
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "paths": {
+      "@/*": ["./src-ts/*"],
+    },
+    "types": ["bun"],
+
+    /* Emit */
+    "noEmit": true,
+
+    /* Interop Constraints */
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": false,
+
+    /* Language and Environment */
+    "jsx": "react-jsx",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "moduleDetection": "force",
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+
+    /* Completeness */
+    "skipLibCheck": true,
+  },
+}
